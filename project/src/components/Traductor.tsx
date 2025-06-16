@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Languages, ArrowRightLeft, Volume2, Copy } from 'lucide-react';
+import { Languages, ArrowRightLeft, Copy } from 'lucide-react';
 
 const Traductor = () => {
   const [textoEspanol, setTextoEspanol] = useState('');
