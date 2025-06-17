@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-olive-green/80 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+    <header className="bg-olive-green/60 backdrop-blur-sm shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-3">
@@ -60,7 +60,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-olive-green/80 backdrop-blur-sm border-t border-sky-blue">
+          <div className="lg:hidden bg-olive-green/60 backdrop-blur-sm border-t border-sky-blue">
             <nav className="py-4 space-y-2">
               {navItems.map((item) => (
                 <button
