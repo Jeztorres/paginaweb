@@ -90,7 +90,7 @@ const Servicios = () => {
     {
       id: 5,
       nombre: "Energía Eléctrica CFE",
-      descripción: "Suministro eléctrico confiable y servicios de atención al cliente.",
+      descripcion: "Suministro eléctrico confiable y servicios de atención al cliente.",
       icono: <Zap size={32} />,
       contacto: {
         telefono: "071",
