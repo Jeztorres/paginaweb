@@ -5,7 +5,7 @@ import './index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init({ once: true });
+AOS.init({ once: false, mirror: true });
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
