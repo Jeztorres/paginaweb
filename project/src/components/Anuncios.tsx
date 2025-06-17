@@ -87,7 +87,7 @@ const Anuncios = () => {
   };
 
   return (
-    <div className="py-20 bg-gradient-to-br from-cream to-white">
+    <div className="py-20 bg-gradient-to-br from-cream to-white" data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
