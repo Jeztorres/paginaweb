@@ -1,1 +1,1 @@
-Coloque su imagen de fondo de inicio aqui con el nombre `home-bg.jpg` para que aparezca automaticamente en la pagina principal.
+Coloque su imagen de fondo de inicio aqui con el nombre `home-bg.jpg` para que aparezca automaticamente en la pagina principal. El héroe aplica un degradado con un 60% de opacidad para dejar ver la imagen.
