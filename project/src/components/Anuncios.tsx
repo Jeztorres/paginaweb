@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bell, Calendar, Info, X, ExternalLink } from 'lucide-react';
+import { Bell, Calendar, Info, X } from 'lucide-react';
 
 interface Anuncio {
   id: number;
