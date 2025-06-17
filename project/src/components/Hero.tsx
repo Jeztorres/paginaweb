@@ -11,11 +11,11 @@ const Hero = () => {
 
   return (
     <div
-      className="bg-gradient-to-br from-olive-green to-sky-blue bg-[url('/images/home-bg.jpg')] bg-bottom bg-no-repeat min-h-screen flex items-center"
+      className="bg-gradient-to-br from-olive-green to-sky-blue min-h-screen flex items-center"
       data-aos="fade-up"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 sm:px-6 lg:px-8 py-20 items-center">
+        <div className="text-center md:text-left">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             Bienvenidos a
             <br />
@@ -62,6 +62,13 @@ const Hero = () => {
               <p className="text-cream">Avanzamos hacia un futuro próspero</p>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center">
+          <img
+            src="/images/home-bg.jpg"
+            alt="Vista de Patria Nueva"
+            className="rounded-lg shadow-lg w-full max-h-[500px] object-cover"
+          />
         </div>
       </div>
     </div>

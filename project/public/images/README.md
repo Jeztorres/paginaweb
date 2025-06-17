@@ -1,1 +1,1 @@
-Coloque su imagen de fondo de inicio aqui con el nombre `home-bg.jpg` para que aparezca automaticamente en la pagina principal.
+Coloque su imagen de inicio aqui con el nombre `home-bg.jpg`. Esta imagen se mostrará en la sección de héroe de la página principal.
