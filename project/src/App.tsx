@@ -14,25 +14,25 @@ function App() {
     <div className="min-h-screen bg-cream">
       <Header />
       <main>
-        <section id="inicio">
+        <section id="inicio" data-aos="fade-up">
           <Hero />
         </section>
-        <section id="historia">
+        <section id="historia" data-aos="fade-up">
           <Historia />
         </section>
-        <section id="anuncios">
+        <section id="anuncios" data-aos="fade-up">
           <Anuncios />
         </section>
-        <section id="eventos">
+        <section id="eventos" data-aos="fade-up">
           <Eventos />
         </section>
-        <section id="servicios">
+        <section id="servicios" data-aos="fade-up">
           <Servicios />
         </section>
-        <section id="traductor">
+        <section id="traductor" data-aos="fade-up">
           <Traductor />
         </section>
-        <section id="contacto">
+        <section id="contacto" data-aos="fade-up">
           <Contacto />
         </section>
       </main>
