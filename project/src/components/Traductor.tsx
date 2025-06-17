@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Languages, ArrowRightLeft, Copy } from 'lucide-react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Traductor = () => {
   const [textoEspanol, setTextoEspanol] = useState('');
   const [textoHnahnu, setTextoHnahnu] = useState('');
   const [direccion, setDireccion] = useState<'esp-hna' | 'hna-esp'>('esp-hna');
+  const { ref, isVisible } = useScrollAnimation();
 
   // Diccionario básico para simulación (en un proyecto real esto vendría de una API)
   const diccionario: { [key: string]: string } = {
@@ -81,7 +83,10 @@ const Traductor = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-br from-sky-blue to-olive-green">
+    <div
+      ref={ref}
+      className={`py-20 bg-gradient-to-br from-sky-blue to-olive-green ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">

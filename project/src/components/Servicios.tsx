@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Globe, Facebook, GraduationCap, Heart, Zap, Droplets, Wifi, Users } from 'lucide-react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 interface Servicio {
   id: number;
@@ -16,6 +17,7 @@ interface Servicio {
 }
 
 const Servicios = () => {
+  const { ref, isVisible } = useScrollAnimation();
   const servicios: Servicio[] = [
     {
       id: 1,
@@ -148,7 +150,10 @@ const Servicios = () => {
   };
 
   return (
-    <div className="py-20 bg-cream">
+    <div
+      ref={ref}
+      className={`py-20 bg-cream ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">

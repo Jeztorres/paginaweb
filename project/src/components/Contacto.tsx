@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, Facebook, MessageSquare } from 'lucide-react';
+import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ const Contacto = () => {
     asunto: '',
     mensaje: ''
   });
+  const { ref, isVisible } = useScrollAnimation();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -33,7 +35,10 @@ const Contacto = () => {
   };
 
   return (
-    <div className="py-20 bg-cream">
+    <div
+      ref={ref}
+      className={`py-20 bg-cream ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
